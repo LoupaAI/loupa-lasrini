@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://app.loupa.ai/loupa-favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://app.loupa.ai/loupa-favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://app.loupa.ai/loupa-favicon.png">
+    <meta property="og:image:secure_url" content="https://app.loupa.ai/loupa-favicon.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://app.loupa.ai/loupa-favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lasrini — Little Hands, Big Table</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root {
+  --color-accent: #A0974F;
+  --color-neutral: #F3EEE8;
+  --font-heading: "Inter Bold", sans-serif;
+  --font-body: "Inter Regular", sans-serif;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 40px;
+  --space-card: 40px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --container-max: 1200px;
+}
+body { font-family: "Inter", sans-serif; background: #FFFFFF; }
+h1,h2,h3,h4,h5,h6 { font-family: "Inter", sans-serif; }
+</style>
+<style data-loupa-safety>section,[data-loupa-section-id]{overflow-x:clip !important;}section[class*="featured-product"],section[id*="featured-product"],section[class*="product-detail"],section[id*="product-detail"],section[class*="product-hero"],section[id*="product-hero"],[data-loupa-section-id*="featured-product"],[data-loupa-section-id*="product-detail"],[data-loupa-section-id*="product-hero"]{padding:4rem 1.5rem !important;width:100% !important;box-sizing:border-box !important;}section[class*="featured-product"] > *,section[id*="featured-product"] > *,section[class*="product-detail"] > *,section[id*="product-detail"] > *,section[class*="product-hero"] > *,section[id*="product-hero"] > *,[data-loupa-section-id*="featured-product"] > *,[data-loupa-section-id*="product-detail"] > *,[data-loupa-section-id*="product-hero"] > *{max-width:1200px !important;margin-left:auto !important;margin-right:auto !important;width:100% !important;box-sizing:border-box !important;}[class*="featured-product"] .grid,[id*="featured-product"] .grid,[class*="featured-product"] [class*="grid-cols-2"],[id*="featured-product"] [class*="grid-cols-2"],[class*="product-detail"] .grid,[id*="product-detail"] .grid,[class*="product-detail"] [class*="grid-cols-2"],[id*="product-detail"] [class*="grid-cols-2"],[class*="product-hero"] .grid,[id*="product-hero"] .grid,[class*="product-hero"] [class*="grid-cols-2"],[id*="product-hero"] [class*="grid-cols-2"]{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;align-items:start !important;gap:2rem !important;}[class*="featured-product"] .grid > *,[id*="featured-product"] .grid > *,[class*="product-detail"] .grid > *,[id*="product-detail"] .grid > *,[class*="product-hero"] .grid > *,[id*="product-hero"] .grid > *{min-width:0 !important;max-width:100% !important;overflow:hidden !important;}[class*="featured-product"] img,[id*="featured-product"] img,[class*="product-detail"] img,[id*="product-detail"] img,[class*="product-hero"] img,[id*="product-hero"] img{max-width:100% !important;width:100% !important;height:auto !important;aspect-ratio:1/1 !important;object-fit:contain !important;object-position:center !important;display:block !important;position:static !important;}[class*="featured-product"] [class*="thumb"],[id*="featured-product"] [class*="thumb"],[class*="product-detail"] [class*="thumb"],[id*="product-detail"] [class*="thumb"],[class*="product-hero"] [class*="thumb"],[id*="product-hero"] [class*="thumb"]{max-width:96px !important;flex-shrink:0 !important;}[class*="featured-product"] [class*="thumb"] img,[id*="featured-product"] [class*="thumb"] img,[class*="product-detail"] [class*="thumb"] img,[id*="product-detail"] [class*="thumb"] img,[class*="product-hero"] [class*="thumb"] img,[id*="product-hero"] [class*="thumb"] img{width:100% !important;height:auto !important;aspect-ratio:1/1 !important;object-fit:contain !important;object-position:center !important;}[class*="featured-product"] [class*="absolute"],[class*="product-detail"] [class*="absolute"],[class*="product-hero"] [class*="absolute"]{position:relative !important;inset:auto !important;transform:none !important;}@media (max-width:767px){section[class*="featured-product"],section[id*="featured-product"],section[class*="product-detail"],section[id*="product-detail"],section[class*="product-hero"],section[id*="product-hero"]{padding:2.5rem 1rem !important;}[class*="featured-product"] .grid,[id*="featured-product"] .grid,[class*="featured-product"] [class*="grid-cols-2"],[id*="featured-product"] [class*="grid-cols-2"],[class*="product-detail"] .grid,[id*="product-detail"] .grid,[class*="product-detail"] [class*="grid-cols-2"],[id*="product-detail"] [class*="grid-cols-2"],[class*="product-hero"] .grid,[id*="product-hero"] .grid,[class*="product-hero"] [class*="grid-cols-2"],[id*="product-hero"] [class*="grid-cols-2"]{grid-template-columns:minmax(0,1fr) !important;}}</style><style data-loupa-featured-clamp>
+/* Global safety: images can never exceed their container. */
+img, svg, video { max-width: 100%; height: auto; }
+/* Featured-product / product-gallery sections: force strict column containment. */
+section[id*="featured-product" i], section[class*="featured-product" i],
+section[id*="product-showcase" i], section[class*="product-showcase" i],
+section[id*="product-gallery" i], section[class*="product-gallery" i],
+[data-loupa-section-key*="featured-product" i],
+[data-loupa-section-id*="featured-product" i] {
+  overflow: hidden;
+}
+section[id*="featured-product" i] *, section[class*="featured-product" i] *,
+section[id*="product-showcase" i] *, section[class*="product-showcase" i] *,
+section[id*="product-gallery" i] *, section[class*="product-gallery" i] *,
+[data-loupa-section-key*="featured-product" i] *,
+[data-loupa-section-id*="featured-product" i] * {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+section[id*="featured-product" i] img:not([data-loupa-avatar]), section[class*="featured-product" i] img:not([data-loupa-avatar]),
+section[id*="product-showcase" i] img:not([data-loupa-avatar]), section[class*="product-showcase" i] img:not([data-loupa-avatar]),
+section[id*="product-gallery" i] img:not([data-loupa-avatar]), section[class*="product-gallery" i] img:not([data-loupa-avatar]),
+[data-loupa-section-key*="featured-product" i] img:not([data-loupa-avatar]),
+[data-loupa-section-id*="featured-product" i] img:not([data-loupa-avatar]) {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+  position: static !important;
+  transform: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+/* Small avatars (testimonial portraits, author photos) must stay small squares
+   on every breakpoint — they are explicitly excluded from the clamp above. */
+img[data-loupa-avatar] {
+  width: 56px !important;
+  height: 56px !important;
+  min-width: 56px !important;
+  max-width: 56px !important;
+  flex: 0 0 auto !important;
+  object-fit: cover !important;
+  align-self: flex-start !important;
+  display: block !important;
+}
+@media (min-width: 768px) {
+  img[data-loupa-avatar] {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    max-width: 64px !important;
+  }
+}
+/* Testimonial bar stays a compact horizontal row that never exceeds its column. */
+[data-loupa-testimonial-box] {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+[data-loupa-testimonial-box] > *:not(img) { min-width: 0 !important; flex: 1 1 auto !important; }
+/* Main product gallery image is always a perfect 1:1 square. */
+img[data-gallery-main], #product-gallery-main {
+  aspect-ratio: 1 / 1 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+/* Its wrapper must be square too, so the image can never letterbox. */
+[data-loupa-gallery-main-wrap] {
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  overflow: hidden !important;
+}
+/* Gallery thumbnails stay square. */
+[data-gallery-thumb], [data-gallery-thumb] img {
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link data-loupa-fonts rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style data-loupa-fonts-enforce>
+:root { --loupa-font-heading: "Inter"; --loupa-font-body: "Inter"; --font-heading: "Inter", sans-serif !important; --font-body: "Inter", sans-serif !important; }
+html, body, button, input, select, textarea,
+p, span, li, a, div, label, small, strong, em, td, th, blockquote, figcaption {
+  font-family: "Inter", sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 *,
+[class*="heading" i], [class*="title" i], [class*="headline" i] {
+  font-family: "Inter", sans-serif !important;
+}
+i, .fa, [class^="fa-"], [class*=" fa-"], [class*="icon" i] { font-family: inherit; }
+</style>
+</head>
+<body class="bg-white"><div data-loupa-announcement-bar style="width:100%;background:#000000;color:#ffffff;padding:10px 20px;text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:500;letter-spacing:0.04em;box-sizing:border-box;">Instant digital delivery  •  Secure checkout  •  Trusted worldwide</div><header data-loupa-brand-header style="width:100%;background:#F3EEE8;padding:18px 32px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:24px;font-family:Arial,Helvetica,sans-serif;box-sizing:border-box;flex-wrap:wrap;"><style data-loupa-brand-header-style>@media (max-width:768px){[data-loupa-brand-header]{flex-direction:column !important;align-items:center !important;padding:16px 20px !important;gap:12px !important;}[data-loupa-brand-header] > div{display:flex !important;flex-direction:column !important;align-items:center !important;justify-content:center !important;gap:12px !important;flex:0 0 auto !important;width:100% !important;min-width:0 !important;}[data-loupa-brand-header] > div > img{max-width:200px !important;max-height:48px !important;}[data-loupa-brand-header] > div > nav{width:100% !important;justify-content:center !important;gap:18px !important;flex-wrap:wrap !important;}[data-loupa-brand-header] > a{display:none !important;}}</style><div style="display:flex;align-items:center;gap:28px;flex:1 1 auto;min-width:0;flex-wrap:wrap;"><img data-loupa-brand-logo src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjQiIHdpZHRoPSI5MDAiIGhlaWdodD0iNjQiPjx0ZXh0IHg9IjQ1MCIgeT0iNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNDAwIiBmb250LXNpemU9IjM0IiBmaWxsPSIjMTAxMDEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5XaGF0IG1ha2VzIGhvbGlkYXkgY29va2luZyBmaW5hbGx5IHdvcmsgd2l0aCBhIHRvZGRsZXI8L3RleHQ+PC9zdmc+" alt="What makes holiday cooking finally work with a toddler" style="max-height:56px;max-width:220px;width:auto;height:auto;object-fit:contain;display:block;flex-shrink:0;" /><nav data-loupa-brand-nav style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;"><a data-loupa-brand-product href="#featured-product" onclick="event.preventDefault();var t=document.querySelector('[data-loupa-section-id*=\'featured-product\'],[id*=\'featured-product\'],[class*=\'featured-product\'],#featured-product,.featured-product');if(!t){var secs=Array.prototype.slice.call(document.querySelectorAll('section'));var priceRe=/(?:[\$€£¥]\s*\d+[.,]?\d*)|(?:\d+[.,]\d{2}\s*(?:USD|EUR|GBP|CHF|CAD|AUD))/i;var ctaRe=/buy\s*now|jetzt\s*kaufen|comprar\s*ahora|acheter|acquista|kopen|comprar/i;for(var i=0;i<secs.length && !t;i++){if(priceRe.test(secs[i].textContent||''))t=secs[i];}if(!t){for(var j=0;j<secs.length && !t;j++){if(ctaRe.test(secs[j].textContent||''))t=secs[j];}}if(!t)t=secs[1]||secs[0];}if(t){var y=t.getBoundingClientRect().top+window.pageYOffset-20;window.scrollTo({top:y,behavior:'smooth'});}" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;color:#101010;text-decoration:none;letter-spacing:0.02em;cursor:pointer;display:inline-block">What makes holiday cooking finally work with a toddler</a></nav></div><a data-loupa-brand-cta href="https://advaice.io" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;background:#000000;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:500;padding:0 20px;height:44px;border-radius:8px;letter-spacing:0.02em;white-space:nowrap;">Buy Now</a></header>
+
+<section class="max-w-[1300px] mx-auto py-12 md:py-16 px-4 md:px-8" data-loupa-section-key="featured-product_1 featured-product featured-product-8">
+  <div class="flex flex-col lg:grid lg:grid-cols-[1fr_minmax(400px,500px)] lg:items-start gap-10 lg:gap-16">
+
+    <!-- LEFT COLUMN -->
+    <div class="flex flex-col">
+      <!-- Image Gallery -->
+      <div class="flex flex-col md:flex-row-reverse gap-4 mb-6 md:mb-8">
+        <div data-loupa-gallery-main-wrap class="flex-1 min-w-0 relative bg-[#F4F4F5] rounded-2xl overflow-hidden aspect-square">
+          <img data-gallery-main id="product-gallery-main" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/ad-product-images/generated/ec33541d-1e9e-42ad-b887-181fbae91a8b.jpg" class="w-full h-full object-cover block aspect-square object-cover" alt="lasrini guided routine book">
+        </div>
+        <div class="flex md:flex-col gap-3 overflow-x-auto md:overflow-visible shrink-0 md:w-20">
+          <button type="button" data-gallery-thumb class="shrink-0">
+            <img data-loupa-avatar="1" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/ad-product-images/generated/ec33541d-1e9e-42ad-b887-181fbae91a8b.jpg" class="w-20 h-20 aspect-square object-cover rounded-xl block" alt="Toddler cutting cookie dough">
+          </button>
+          <button type="button" data-gallery-thumb class="shrink-0">
+            <img data-loupa-avatar="1" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/ad-product-images/generated/73d8aecf-06ff-45a4-99ed-2e11267359ee.jpg" class="w-20 h-20 aspect-square object-cover rounded-xl block" alt="Thanksgiving prep station">
+          </button>
+          <button type="button" data-gallery-thumb class="shrink-0">
+            <img data-loupa-avatar="1" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/ad-product-images/generated/a322c85c-e5b0-4200-bbda-faf3de27677a.jpg" class="w-20 h-20 aspect-square object-cover rounded-xl block" alt="Child pouring milk">
+          </button>
+          <button type="button" data-gallery-thumb class="shrink-0">
+            <img data-loupa-avatar="1" src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/ad-product-images/generated/d5b9386a-6f0c-4e2a-bd1c-8d2b5e2c01ae.jpg" class="w-20 h-20 aspect-square object-cover rounded-xl block" alt="Hanukkah kitchen station">
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabbed Info Box -->
+      <div class="flex flex-col bg-[#27272A] rounded-2xl p-6 md:p-8 md:px-10">
+        <span class="text-xs font-medium tracking-widest uppercase text-[#9CA3AF] mb-2">Inside The Book</span>
+        <h2 class="text-xl md:text-2xl font-medium text-white mb-6" style="line-height:1.15;">What makes holiday cooking finally work with a toddler</h2>
+
+        <div class="flex w-full overflow-hidden rounded-lg border border-[#3F3F46]">
+          <button id="tab-btn-1" data-tab="pane-1" class="flex-1 py-2.5 px-4 text-sm font-medium bg-white text-[#251D13]">Overview</button>
+          <button id="tab-btn-2" data-tab="pane-2" class="flex-1 py-2.5 px-4 text-sm font-medium text-[#F3EEE8] hover:bg-[#3F3F46] transition-colors">Why It Works</button>
+          <button id="tab-btn-3" data-tab="pane-3" class="flex-1 py-2.5 px-4 text-sm font-medium text-[#F3EEE8] hover:bg-[#3F3F46] transition-colors">Delivery</button>
+        </div>
+
+        <!-- Pane 1 -->
+        <div id="pane-1" class="tab-pane">
+          <p class="text-sm text-[#F3EEE8] leading-relaxed mt-6">Pick a seasonal dish, flip to the matching child-led station card, and follow safety-first steps that hand your child one real job while you prep the rest. Thirty pages built around the actual Thanksgiving, Christmas, and Hanukkah recipes your family already makes.</p>
+          <div class="grid grid-cols-2 gap-4 mt-6 mb-2">
+            <div class="bg-[#18181B] py-5 px-4 rounded-xl">
+              <div class="text-2xl font-medium text-white">30</div>
+              <div class="text-xs text-[#9CA3AF] mt-1">pages of guided stations</div>
+            </div>
+            <div class="bg-[#18181B] py-5 px-4 rounded-xl">
+              <div class="text-2xl font-medium text-white">Ages 2–6</div>
+              <div class="text-xs text-[#9CA3AF] mt-1">age-matched tasks</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pane 2 -->
+        <div id="pane-2" class="tab-pane hidden">
+          <p class="text-sm text-[#F3EEE8] leading-relaxed mt-6">Every station card is matched to a real seasonal recipe with built-in safety guidance, so you never have to guess what your two-year-old can safely handle. The child does a genuine job while you keep the meal on track.</p>
+          <div class="grid grid-cols-2 gap-4 mt-6 mb-2">
+            <div class="bg-[#18181B] py-5 px-4 rounded-xl">
+              <div class="text-2xl font-medium text-white">1 season</div>
+              <div class="text-xs text-[#9CA3AF] mt-1">to a real kitchen helper</div>
+            </div>
+            <div class="bg-[#18181B] py-5 px-4 rounded-xl">
+              <div class="text-2xl font-medium text-white">3 holidays</div>
+              <div class="text-xs text-[#9CA3AF] mt-1">covered start to finish</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pane 3 -->
+        <div id="pane-3" class="tab-pane hidden">
+          <p class="text-sm text-[#F3EEE8] leading-relaxed mt-6">The complete guided routine book arrives in your inbox the moment you order, so you can print your first station card and start baking together the same day the cravings hit.</p>
+          <div class="grid grid-cols-2 gap-4 mt-6 mb-2">
+            <div class="bg-[#18181B] py-5 px-4 rounded-xl">
+              <div class="text-2xl font-medium text-white">Instant</div>
+              <div class="text-xs text-[#9CA3AF] mt-1">delivered to your email</div>
+            </div>
+            <div class="bg-[#18181B] py-5 px-4 rounded-xl">
+              <div class="text-2xl font-medium text-white">Print</div>
+              <div class="text-xs text-[#9CA3AF] mt-1">or read on any device</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="flex flex-col">
+      <h1 class="text-3xl md:text-4xl font-semibold text-[#251D13] leading-tight" style="letter-spacing:-0.02em;">Little Hands, Big Table</h1>
+
+      <p class="text-sm md:text-base text-[#6B5943] leading-relaxed mb-4 mt-4">The holiday Montessori kitchen companion that lets your toddler
+        <span class="bg-[#18181B] text-white font-medium px-2 py-0.5 rounded inline-block">really help this season</span>
+        instead of being told "not now, honey" — no meltdowns, no ruined dishes.</p>
+
+      <div class="flex flex-wrap gap-3 mt-4 mb-8">
+        <span class="text-sm font-medium text-[#251D13] flex items-center gap-2 px-4 py-1.5 rounded-full border border-dashed border-[#F3EEE8]">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 text-[#251D13] fill-current shrink-0"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
+          Safety-First Steps
+        </span>
+        <span class="text-sm font-medium text-[#251D13] flex items-center gap-2 px-4 py-1.5 rounded-full border border-dashed border-[#F3EEE8]">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 text-[#251D13] fill-current shrink-0"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
+          Season-Matched
+        </span>
+        <span class="text-sm font-medium text-[#251D13] flex items-center gap-2 px-4 py-1.5 rounded-full border border-dashed border-[#F3EEE8]">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 text-[#251D13] fill-current shrink-0"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
+          Montessori-Guided
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3 md:gap-4 mb-6">
+        <span class="text-2xl font-medium text-[#251D13]">$12</span>
+        <span class="text-sm text-[#9CA3AF] line-through">$24</span>
+        <span class="text-xs font-medium text-white tracking-wide bg-[#3F3F46] px-2 py-1 rounded-md">-50%</span>
+      </div>
+
+      <a href="https://advaice.io" class="w-full bg-[#18181B] hover:bg-[#3F3F46] transition-colors duration-300 text-base font-medium text-white rounded-xl mb-3 flex items-center justify-center" style="height:50px;">Buy Now</a>
+      <p class="text-sm text-[#6B5943] text-center">Instant digital delivery — start cooking together today</p>
+
+      <p class="text-sm md:text-base text-[#6B5943] leading-relaxed mt-6 mb-6">A done-for-you way to fold your 2–6 year old into Thanksgiving, Christmas, and Hanukkah cooking. You pick the recipe or task, flip to the matching child-led station card, and follow simple steps that give your child a real job — pouring, stirring, or cutting soft foods with a kid-safe tool — while you prep the rest. Written in a warm, calm voice, like a trusted Montessori guide sitting right beside you at the busiest table of the year.</p>
+
+      <div class="mb-8">
+        <details class="group border-b border-[#EBEAE5]">
+          <summary class="cursor-pointer list-none flex justify-between items-center py-5 [&::-webkit-details-marker]:hidden">
+            <span class="text-base font-medium text-[#251D13]">What's inside the book?</span>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-[#9CA3AF] fill-none stroke-current group-open:hidden" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-[#9CA3AF] fill-none stroke-current hidden group-open:block" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <p class="text-sm text-[#6B5943] leading-relaxed pb-5">Thirty pages of child-led station cards, each tied to a real seasonal dish. Every card lists the exact job your child does, the safe tool to use, and how to set up the moment so it stays calm and mess-controlled while you finish the meal.</p>
+        </details>
+        <details class="group border-b border-[#EBEAE5]">
+          <summary class="cursor-pointer list-none flex justify-between items-center py-5 [&::-webkit-details-marker]:hidden">
+            <span class="text-base font-medium text-[#251D13]">How do I use it during a busy meal?</span>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-[#9CA3AF] fill-none stroke-current group-open:hidden" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-[#9CA3AF] fill-none stroke-current hidden group-open:block" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <p class="text-sm text-[#6B5943] leading-relaxed pb-5">Pick the dish you're already making, flip to its matching station card, and hand your child their one job. The steps take seconds to set up, so you keep cooking while they stay happily engaged beside you — not underfoot.</p>
+        </details>
+        <details class="group border-b border-[#EBEAE5]">
+          <summary class="cursor-pointer list-none flex justify-between items-center py-5 [&::-webkit-details-marker]:hidden">
+            <span class="text-base font-medium text-[#251D13]">Is it really safe for a 2-year-old?</span>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-[#9CA3AF] fill-none stroke-current group-open:hidden" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-[#9CA3AF] fill-none stroke-current hidden group-open:block" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </summary>
+          <p class="text-sm text-[#6B5943] leading-relaxed pb-5">Yes. Every station is sorted by age-appropriateness with built-in safety guidance, so you never guess. Younger toddlers pour and stir, while older preschoolers cut soft foods with kid-safe tools — always tasks that match what their little hands can genuinely handle.</p>
+        </details>
+      </div>
+
+      <div class="flex items-center bg-[#27272A] rounded-2xl p-6 md:p-8 gap-6 md:gap-8">
+        <div class="shrink-0">
+          <div class="text-4xl font-medium text-white">Ages 2–6</div>
+          <span class="text-xs text-[#9CA3AF] mt-1 block">the formative window</span>
+        </div>
+        <div>
+          <div class="text-sm font-medium text-white mb-1">Built for the years that matter most</div>
+          <p class="text-sm text-[#F3EEE8] leading-relaxed">The holidays are the perfect moment to build a child's confidence and independence — this book turns the busiest cooking days into real chances for your toddler to feel capable, included, and proud.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const tabButtons = document.querySelectorAll('[data-tab]');
+  const panes = document.querySelectorAll('.tab-pane');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      panes.forEach(p => p.classList.add('hidden'));
+      tabButtons.forEach(b => {
+        b.classList.remove('bg-white','text-[#251D13]');
+        b.classList.add('text-[#F3EEE8]','hover:bg-[#3F3F46]','transition-colors');
+      });
+      document.getElementById(btn.dataset.tab).classList.remove('hidden');
+      btn.classList.remove('text-[#F3EEE8]','hover:bg-[#3F3F46]','transition-colors');
+      btn.classList.add('bg-white','text-[#251D13]');
+    });
+  });
+</script>
+
+<footer data-loupa-brand-footer style="width:100%;background:#F3EEE8;padding:40px 24px 28px;display:flex;flex-direction:column;align-items:center;gap:14px;font-family:Arial,Helvetica,sans-serif;box-sizing:border-box;"><div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;max-width:900px;"><img src="https://cdn.jsdelivr.net/gh/aaronfagan/svg-credit-card-payment-icons@main/flat/visa.svg" alt="Visa" data-loupa-no-edit="1" loading="lazy" style="height:28px;width:auto;display:block;flex-shrink:0;" /><img src="https://cdn.jsdelivr.net/gh/aaronfagan/svg-credit-card-payment-icons@main/flat/mastercard.svg" alt="Mastercard" data-loupa-no-edit="1" loading="lazy" style="height:28px;width:auto;display:block;flex-shrink:0;" /><img src="https://cdn.jsdelivr.net/gh/aaronfagan/svg-credit-card-payment-icons@main/flat/amex.svg" alt="American Express" data-loupa-no-edit="1" loading="lazy" style="height:28px;width:auto;display:block;flex-shrink:0;" /><img src="https://cdn.jsdelivr.net/gh/aaronfagan/svg-credit-card-payment-icons@main/flat/maestro.svg" alt="Maestro" data-loupa-no-edit="1" loading="lazy" style="height:28px;width:auto;display:block;flex-shrink:0;" /><img src="https://cdn.jsdelivr.net/gh/aaronfagan/svg-credit-card-payment-icons@main/flat/paypal.svg" alt="PayPal" data-loupa-no-edit="1" loading="lazy" style="height:28px;width:auto;display:block;flex-shrink:0;" /><img src="https://cdn.jsdelivr.net/gh/aaronfagan/svg-credit-card-payment-icons@main/flat/discover.svg" alt="Discover" data-loupa-no-edit="1" loading="lazy" style="height:28px;width:auto;display:block;flex-shrink:0;" /><img src="https://cdn.jsdelivr.net/gh/aaronfagan/svg-credit-card-payment-icons@main/flat/jcb.svg" alt="JCB" data-loupa-no-edit="1" loading="lazy" style="height:28px;width:auto;display:block;flex-shrink:0;" /><img src="https://cdn.jsdelivr.net/gh/aaronfagan/svg-credit-card-payment-icons@main/flat/unionpay.svg" alt="UnionPay" data-loupa-no-edit="1" loading="lazy" style="height:28px;width:auto;display:block;flex-shrink:0;" /></div><div style="font-size:13px;color:#000000;font-family:Arial,Helvetica,sans-serif;text-align:center;">© 2026, Little Hands Table</div></footer><style data-loupa-fonts-enforce-tail>
+:root { --loupa-font-heading: "Inter"; --loupa-font-body: "Inter"; --font-heading: "Inter", sans-serif !important; --font-body: "Inter", sans-serif !important; }
+html, body, button, input, select, textarea,
+p, span, li, a, div, label, small, strong, em, td, th, blockquote, figcaption {
+  font-family: "Inter", sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 *,
+[class*="heading" i], [class*="title" i], [class*="headline" i] {
+  font-family: "Inter", sans-serif !important;
+}
+i, .fa, [class^="fa-"], [class*=" fa-"], [class*="icon" i] { font-family: inherit; }
+</style>
+</body>
+</html>
